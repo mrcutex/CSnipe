@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - CSnipe</title>
+  <!-- Google Fonts and Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #EDF2F9;
+      color: #333;
+      line-height: 1.6;
+      transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0078d7;
+      color: white;
+      padding: 15px 20px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .back-btn:hover {
+      color: #d1d1d1;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(120deg, #005bb5, #0078d7);
+      color: white;
+      border-radius: 0 0 50px 50px;
+    }
+
+    .hero-title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    /* Content Section */
+    .content {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0078d7;
+      margin-bottom: 15px;
+    }
+
+    .text-block {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .text-block i {
+      color: #0078d7;
+    }
+
+    /* Team Section */
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .team-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+      padding: 20px;
+      text-align: center;
+      max-width: 200px;
+      transition: transform 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .team-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .team-role {
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #0078d7, #005bb5);
+      color: white;
+      margin-top: 40px;
+      border-radius: 15px 15px 0 0;
+    }
+
+    /* Dark Mode Styling */
+    .dark-mode {
+      background: #0B1727;
+      color: #9DA9BB;
+    }
+
+    .dark-mode .navbar {
+      background: #1E2A3B;
+    }
+
+    .dark-mode .hero {
+      background: #162231;
+    }
+
+    .dark-mode .footer {
+      background: #162231;
+    }
+     
+    .dark-mode .team-name {
+      color: #fff;
+    }
+    .dark-mode .text-block {
+      color: #9DA9BB;
+    }
+
+    .dark-mode .team-card {
+      background: #1E2A3B;
+      color: #9DA9BB;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">CSnipe</div>
+    <button class="back-btn" onclick="window.history.back()">
+      <i class="fas fa-arrow-left"></i> <b>Back</b>
+    </button>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1 class="hero-title">About Us</h1>
+    <p class="hero-subtitle">Learn more about our mission, vision, and team.</p>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h2 class="section-title">Who We Are</h2>
+    <p class="text-block">
+      CSnipe is your ultimate solution for crafting modern, intuitive, and customizable alert dialogs for Android applications. Designed for developers, our tools bring seamless integration and powerful features to enhance your app's user interface.
+    </p>
+
+    <h2 class="section-title">Our Mission</h2>
+    <p class="text-block">
+      <i class="fas fa-bullseye"></i> To empower developers by providing high-quality, flexible tools that streamline the development process and elevate app experiences.
+    </p>
+
+    <h2 class="section-title">Meet the Team</h2>
+    <div class="team-section">
+      <div class="team-card">
+        <img src="assets/icon1.png" alt="Team Member" class="team-img">
+        <div class="team-name">Cutex</div>
+        <div class="team-role">Lead Developer</div>
+      </div>
+      <div class="team-card">
+        <img src="assets/icon2.png" alt="Team Member" class="team-img">
+        <div class="team-name">Duaa</div>
+        <div class="team-role">UI/UX Designer</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2024 CSnipe. All rights reserved.
+  </div>
+
+  <script>
+    // Handle dark mode based on saved user preference
+    const savedTheme = localStorage.getItem("theme") || "light";
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+  </script>
+</body>
+</html>
